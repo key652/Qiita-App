@@ -16,6 +16,7 @@ xcuserdata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
-*.xcodeproj/project.xcworkspace/xcuserdata/yuma.xcuserdatad/UserInterfaceState.xcuserstate
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode
+
+UserInterfaceState.xcuserstate
