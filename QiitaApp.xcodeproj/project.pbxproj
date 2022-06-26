@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		AA8ACA2628687A73003CC9C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8ACA2528687A73003CC9C1 /* AppDelegate.swift */; };
 		AA8ACA2828687A73003CC9C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8ACA2728687A73003CC9C1 /* SceneDelegate.swift */; };
-		AA8ACA2A28687A73003CC9C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8ACA2928687A73003CC9C1 /* ViewController.swift */; };
 		AA8ACA2D28687A73003CC9C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8ACA2B28687A73003CC9C1 /* Main.storyboard */; };
 		AA8ACA2F28687A74003CC9C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA8ACA2E28687A74003CC9C1 /* Assets.xcassets */; };
 		AA8ACA3228687A74003CC9C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA8ACA3028687A74003CC9C1 /* LaunchScreen.storyboard */; };
 		AA8ACA3D28687A74003CC9C1 /* QiitaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8ACA3C28687A74003CC9C1 /* QiitaAppTests.swift */; };
 		AA8ACA4728687A74003CC9C1 /* QiitaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8ACA4628687A74003CC9C1 /* QiitaAppUITests.swift */; };
 		AA8ACA4928687A74003CC9C1 /* QiitaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8ACA4828687A74003CC9C1 /* QiitaAppUITestsLaunchTests.swift */; };
+		AA8ACA56286895C3003CC9C1 /* ContributionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8ACA55286895C3003CC9C1 /* ContributionListViewController.swift */; };
+		AA8ACA5A286899A6003CC9C1 /* Qiita.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8ACA59286899A6003CC9C1 /* Qiita.swift */; };
+		AA8ACA5C2868AB33003CC9C1 /* QiitaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8ACA5B2868AB33003CC9C1 /* QiitaItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		AA8ACA2228687A73003CC9C1 /* QiitaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8ACA2528687A73003CC9C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA8ACA2728687A73003CC9C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA8ACA2928687A73003CC9C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA8ACA2C28687A73003CC9C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA8ACA2E28687A74003CC9C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA8ACA3128687A74003CC9C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		AA8ACA4228687A74003CC9C1 /* QiitaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA8ACA4628687A74003CC9C1 /* QiitaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAppUITests.swift; sourceTree = "<group>"; };
 		AA8ACA4828687A74003CC9C1 /* QiitaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA8ACA55286895C3003CC9C1 /* ContributionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionListViewController.swift; sourceTree = "<group>"; };
+		AA8ACA59286899A6003CC9C1 /* Qiita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qiita.swift; sourceTree = "<group>"; };
+		AA8ACA5B2868AB33003CC9C1 /* QiitaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,10 @@
 		AA8ACA2428687A73003CC9C1 /* QiitaApp */ = {
 			isa = PBXGroup;
 			children = (
+				AA8ACA582868965F003CC9C1 /* Model */,
+				AA8ACA572868962C003CC9C1 /* ViewController */,
 				AA8ACA2528687A73003CC9C1 /* AppDelegate.swift */,
 				AA8ACA2728687A73003CC9C1 /* SceneDelegate.swift */,
-				AA8ACA2928687A73003CC9C1 /* ViewController.swift */,
 				AA8ACA2B28687A73003CC9C1 /* Main.storyboard */,
 				AA8ACA2E28687A74003CC9C1 /* Assets.xcassets */,
 				AA8ACA3028687A74003CC9C1 /* LaunchScreen.storyboard */,
@@ -125,6 +130,23 @@
 				AA8ACA4828687A74003CC9C1 /* QiitaAppUITestsLaunchTests.swift */,
 			);
 			path = QiitaAppUITests;
+			sourceTree = "<group>";
+		};
+		AA8ACA572868962C003CC9C1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA8ACA55286895C3003CC9C1 /* ContributionListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AA8ACA582868965F003CC9C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA8ACA59286899A6003CC9C1 /* Qiita.swift */,
+				AA8ACA5B2868AB33003CC9C1 /* QiitaItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA8ACA2A28687A73003CC9C1 /* ViewController.swift in Sources */,
+				AA8ACA56286895C3003CC9C1 /* ContributionListViewController.swift in Sources */,
+				AA8ACA5C2868AB33003CC9C1 /* QiitaItem.swift in Sources */,
 				AA8ACA2628687A73003CC9C1 /* AppDelegate.swift in Sources */,
+				AA8ACA5A286899A6003CC9C1 /* Qiita.swift in Sources */,
 				AA8ACA2828687A73003CC9C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
