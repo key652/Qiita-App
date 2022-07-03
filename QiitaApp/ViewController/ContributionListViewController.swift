@@ -140,8 +140,8 @@ private class CustomCell: QiitaItemListCell {
         
         titleLabel.text = state.qiitaItem?.title
         tagsLabel.text = createTagsText(tags: state.qiitaItem?.tags ?? [])
-        if state.qiitaItem != nil {
-            lgtmLabel.text = "LGTM " + String(state.qiitaItem!.likes_count)
+        if let likesCount = state.qiitaItem?.likes_count {
+            lgtmLabel.text = "LGTM " + String(likesCount)
         }
     }
     
