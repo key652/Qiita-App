@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA1102D9287B0F8A005148F8 /* ContributionListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1102D8287B0F8A005148F8 /* ContributionListCellView.swift */; };
+		AA1102DB287B12AD005148F8 /* ContributionListCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA1102DA287B12AD005148F8 /* ContributionListCellView.xib */; };
+		AA52FB12287C6A0200A131E7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA52FB11287C6A0200A131E7 /* Utils.swift */; };
+		AA55E955288050F9007B57AA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55E954288050F9007B57AA /* String.swift */; };
+		AA55E95728805331007B57AA /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA55E95628805331007B57AA /* Date.swift */; };
 		AA64EAA52870B8C900561B5C /* ApiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA64EAA42870B8C900561B5C /* ApiUrl.swift */; };
 		AA64EAA72870B9E500561B5C /* AccessTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA64EAA62870B9E500561B5C /* AccessTokens.swift */; };
 		AA8ACA2628687A73003CC9C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8ACA2528687A73003CC9C1 /* AppDelegate.swift */; };
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA1102D8287B0F8A005148F8 /* ContributionListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionListCellView.swift; sourceTree = "<group>"; };
+		AA1102DA287B12AD005148F8 /* ContributionListCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContributionListCellView.xib; sourceTree = "<group>"; };
+		AA52FB11287C6A0200A131E7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AA55E954288050F9007B57AA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AA55E95628805331007B57AA /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		AA64EAA42870B8C900561B5C /* ApiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrl.swift; sourceTree = "<group>"; };
 		AA64EAA62870B9E500561B5C /* AccessTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokens.swift; sourceTree = "<group>"; };
 		AA8ACA2228687A73003CC9C1 /* QiitaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +94,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA1102D7287B0B1F005148F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA1102D8287B0F8A005148F8 /* ContributionListCellView.swift */,
+				AA1102DA287B12AD005148F8 /* ContributionListCellView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AA52FB10287C69D600A131E7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AA52FB11287C6A0200A131E7 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AA55E953288050EB007B57AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AA55E954288050F9007B57AA /* String.swift */,
+				AA55E95628805331007B57AA /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AA64EAA12870B78000561B5C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +152,9 @@
 		AA8ACA2428687A73003CC9C1 /* QiitaApp */ = {
 			isa = PBXGroup;
 			children = (
+				AA55E953288050EB007B57AA /* Extensions */,
+				AA52FB10287C69D600A131E7 /* Utils */,
+				AA1102D7287B0B1F005148F8 /* View */,
 				AA64EAA12870B78000561B5C /* Resources */,
 				AA8ACA582868965F003CC9C1 /* Model */,
 				AA8ACA572868962C003CC9C1 /* ViewController */,
@@ -268,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA8ACA3228687A74003CC9C1 /* LaunchScreen.storyboard in Resources */,
+				AA1102DB287B12AD005148F8 /* ContributionListCellView.xib in Resources */,
 				AA8ACA2F28687A74003CC9C1 /* Assets.xcassets in Resources */,
 				AA8ACA2D28687A73003CC9C1 /* Main.storyboard in Resources */,
 			);
@@ -296,10 +336,14 @@
 			files = (
 				AA8ACA56286895C3003CC9C1 /* ContributionListViewController.swift in Sources */,
 				AA64EAA72870B9E500561B5C /* AccessTokens.swift in Sources */,
+				AA55E955288050F9007B57AA /* String.swift in Sources */,
+				AA52FB12287C6A0200A131E7 /* Utils.swift in Sources */,
 				AA8ACA5C2868AB33003CC9C1 /* QiitaItem.swift in Sources */,
 				AA8ACA2628687A73003CC9C1 /* AppDelegate.swift in Sources */,
 				AA8ACA5A286899A6003CC9C1 /* Qiita.swift in Sources */,
 				AA8ACA2828687A73003CC9C1 /* SceneDelegate.swift in Sources */,
+				AA55E95728805331007B57AA /* Date.swift in Sources */,
+				AA1102D9287B0F8A005148F8 /* ContributionListCellView.swift in Sources */,
 				AA64EAA52870B8C900561B5C /* ApiUrl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
