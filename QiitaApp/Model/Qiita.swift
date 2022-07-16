@@ -7,15 +7,8 @@
 
 import Foundation
 
-protocol QiitaDelegate: AnyObject {
-    func updateQiitaItems()
-}
-
 final class Qiita {
-    weak var delegate: QiitaDelegate?
-    var qiitaItems: [QiitaItem] = []
-    
-    func getItems() {
+    func getItems(completion: @escaping ([QiitaItem]) -> Void) {
         guard let url = URL(string: ApiUrl.qiitaBaseURL + "items?page=1&per_page=20") else { return }
         var req = URLRequest(url: url)
         req.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -41,9 +34,7 @@ final class Qiita {
             let items = try? decoder.decode([QiitaItem].self, from: data)
             
             guard let items = items else { return }
-            self.qiitaItems = items
-            
-            self.delegate?.updateQiitaItems()
+            completion(items)
         }
         task.resume()
     }
