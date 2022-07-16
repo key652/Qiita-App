@@ -17,26 +17,21 @@ final class ContributionListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        qiitaModel.delegate = self
-        qiitaModel.getItems()
-        
         collectionView.collectionViewLayout = createLayout()
         configureDataSource()
         collectionView.delegate = self
+        
+        qiitaModel.getItems { [weak self] items in
+            var snapshot = NSDiffableDataSourceSnapshot<Int, QiitaItem>()
+            snapshot.appendSections([0])
+            snapshot.appendItems(items)
+            self?.dataSource.apply(snapshot, animatingDifferences: true)
+        }
     }
 }
 
 extension ContributionListViewController: UICollectionViewDelegate {
     
-}
-
-extension ContributionListViewController: QiitaDelegate {
-    func updateQiitaItems() {
-        var snapshot = NSDiffableDataSourceSnapshot<Int, QiitaItem>()
-        snapshot.appendSections([0])
-        snapshot.appendItems(qiitaModel.qiitaItems)
-        dataSource.apply(snapshot, animatingDifferences: true)
-    }
 }
 
 extension ContributionListViewController {
